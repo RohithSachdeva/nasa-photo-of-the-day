@@ -1,16 +1,16 @@
 import React, { useState, useEffect } from "react";
-import axios from "axios";
+import Header from "./header";
+import NasaCard from "./Nasa";
 
 import "./App.css";
+
 
 
 function App() {
   return (
     <div className="App">
-      <p>
-        Read through the instructions in the README.md file to build your NASA
-        app! Have fun 🚀!
-      </p>
+      <Header />
+      <NasaCard />
     </div>
   );
 }
@@ -26,5 +26,9 @@ export default App;
 
 // https://api.nasa.gov/planetary/apod?api_key=XdxdNOQsBkUi5YJkbjNIlVtnPD75yGFAePvauVhr
 
-axios
-.get('https://api.nasa.gov/planetary/apod?api_key=XdxdNOQsBkUi5YJkbjNIlVtnPD75yGFAePvauVhr')
+//get the api w axios.. console log .. view the data 
+//make files after seeing what kind of data is being outputted
+
+
+// axios
+// .get('https://api.nasa.gov/planetary/apod?api_key=XdxdNOQsBkUi5YJkbjNIlVtnPD75yGFAePvauVhr')
